@@ -2,7 +2,7 @@
   text-align: center;
 }
 p {
-  margin: 3em;
+  margin: 4em;
 }
 
 .drum-pad {
@@ -12,14 +12,9 @@ p {
   cursor: pointer;
 }
 
-.drum-pad:hover {
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: color, blue;
-  transition-property: color, blue;
+#drum-container div:hover {
+  background-color: black;
+  color: magenta;
 }
 
 #drum-container {
