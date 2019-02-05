@@ -1,5 +1,7 @@
-* {
+body {
   text-align: center;
+  background: radial-gradient(white, black);
+  height: 100vh;
 }
 p {
   margin: 4em;
@@ -10,22 +12,38 @@ p {
   height: 10em;
   border: 1px solid black;
   cursor: pointer;
+  background-color: transparent;
+  animation: 5s infinite alternate fade;
 }
 
 #drum-container div:hover {
-  background-color: black;
-  color: magenta;
+  color: white;
 }
 
 #drum-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 6em;
+  width: 30.4em;
+  border: 2px solid black;
+
 }
 
 #drum-machine {
   padding-top: 5%;
   width: 30em;
   margin: auto;
+}
+
+@keyframes fade {
+  from {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+  to {
+    background-color: rgba(3,0,3,.6);
+    color: white;
+    border: 1px solid white;
+  }
 }
